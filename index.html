@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cookie Clicker!</title>
+    <style>
+        .content {
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+    <script>
+        function cookieClick() {
+            var countLabel = document.getElementById("cookieCount");
+            var count = parseInt(countLabel.innerText, 10);
+            count += 1;
+            countLabel.innerHTML = count;
+            if (count == 100) {
+                window.alert("Wow! 20 Cookies!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>Simple Cookie Clicker!</h1>
+        <h2>Cookie Count: <span id="cookieCount">0</span></h2>
+        <img onclick="cookieClick()" width="500px" height="500px" src="https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/4:3/w_3600,h_2700,c_limit/chocolate-chip-cookie.jpg">
+    </div>
+</body>
+</html>
